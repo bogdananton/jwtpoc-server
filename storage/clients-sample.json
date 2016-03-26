@@ -1,0 +1,32 @@
+[
+  {
+    "name": "client-1",
+    "description": "web application /w cron",
+    "callback_url": "http://localhost:20001",
+    "keys": [
+      {
+        "name": "vps-u",
+        "file": "1458955903-56f5e67fc7926",
+        "alg": "RSA",
+        "bits": 512,
+        "created_at": "2016-03-10T01:00:00.324Z",
+        "expires_at": "2016-06-10T01:00:00.551Z"
+      }
+    ]
+  },
+  {
+    "name": "client-2",
+    "callback_url": "http://localhost:20002",
+    "description": "",
+    "keys": [
+      {
+        "name": "sandbox00101",
+        "file": "1458955904-56f5e680638b5",
+        "alg": "RSA",
+        "bits": 512,
+        "created_at": "2016-03-26T03:48:59.821Z",
+        "expires_at": "2016-06-26T03:49:19.696Z"
+      }
+    ]
+  }
+]

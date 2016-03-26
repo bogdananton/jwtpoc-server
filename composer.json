@@ -1,0 +1,11 @@
+{
+  "name": "bogdananton/jwtpoc-server",
+  "version": "0.1.0",
+  "license": "MIT",
+  "require": {
+
+  },
+  "require-dev": {
+    "phpseclib/phpseclib": "2.0.1"
+  }
+}
