@@ -1,0 +1,178 @@
+#%RAML 0.8
+# baseUri: http://mocksvc.mulesoft.com/mocks/99fad097-4b96-491d-8157-be55f3c8c16a
+baseUri: http://localhost:19999
+title: JWTDemo-Server
+version: 1.0.0
+
+securitySchemes:
+    - AdminJWTBearer:
+        type: "x-Administrator-Bearer"
+        describedBy:
+            headers:
+                x-Administrator-Bearer:
+                    description: |
+                       Used to send a previously generated, long lived personal access token.
+                    type: string
+            responses:
+                401:
+                    description: |
+                        Bad or expired token. This can happen if the pre-generated token has expired. To fix, you should re-
+                        generate the token.
+                404:
+                  description: Unauthorized
+
+mediaType: application/json
+
+/:
+ get:
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            {
+              "clients_link": "http://localhost:19999/clients",
+              "settings_link": "http://localhost:19999/settings"
+            }
+
+/clients:
+  description: Manage client applications. The name is the unique identifier. <br><br>  <strong>@todo should add a resource owner identifier to group clients.</strong>
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "name": "client-1",
+                  "description": "web application /w cron",
+                  "callback_url": "http://localhost:20001",
+                  "keys": [
+                    {
+                      "name": "vps-u",
+                      "file": "1458955903-56f5e67fc7926",
+                      "alg": "RSA",
+                      "bits": 512,
+                      "created_at": "2016-03-10T01:00:00.324Z",
+                      "expires_at": "2016-06-10T01:00:00.551Z"
+                    }
+                  ]
+                },
+                {
+                  "name": "client-2",
+                  "callback_url": "http://localhost:20002",
+                  "description": "",
+                  "keys": [
+                    {
+                      "name": "sandbox00101",
+                      "file": "1458955904-56f5e680638b5",
+                      "alg": "RSA",
+                      "bits": 512,
+                      "created_at": "2016-03-26T03:48:59.821Z",
+                      "expires_at": "2016-06-26T03:49:19.696Z"
+                    }
+                  ]
+                }
+              ]
+
+  post:
+    description: Register a client application. The name is a unique identifier that represents the client_id.
+    body:
+      application/json:
+        example: |
+           {
+              "name": "client-1",
+              "description": "web application /w cron",
+              "callback_url": "http://localhost:20001",
+           }
+
+    responses:
+      200:
+        body:
+          application/json:
+              example: |
+                 {
+                   "data": {
+                     "secret": "rx7LxAwzpYYSRL7pn79T9C0hJzhbfdpIOwljfdFCPzMJwDb",
+                     "key": {
+                            "name": "vps-u",
+                            "file": "1458955903-56f5e67fc7926",
+                            "alg": "RSA",
+                            "bits": 512,
+                            "created_at": "2016-03-10T01:00:00.324Z",
+                            "expires_at": "2016-06-10T01:00:00.551Z",
+                            "value": "-----BEGIN RSA PRIVATE KEY-----MIIBOQIBAAJBAM6feWWzG64/w+QxkMbiH0VSZxlo+sgcsJjRy8vr2HkM8vEhqPLH0k8u32GOWJpI0xzvlnYEo0XsXYGDngwLuXUCAwEAAQJAVxEcNp6iq2pzQVUhjKz8QFnY1/xEsM5mG/9LwUJAlcD81ywxIkB1XVR8Gh7deO5+F0W5IdyM7Hp1QykU+I8sAQIhAPYtcyGT2g8P6JCfWf9Xttp/evhyMPWfGjCDrJIMb3hZAiEA1t3/uyYbhdz+4N3WsEBh/65UIacTBat/sZyOvV+u5n0CIGBl9cJ9QhNJ2HjhXX2GnHy9FKs7E/7qmXfL6AScx/2pAiBeKeI18UhkjOpCP9YjXcPU2mBSczbZ6EPI4bSId5NdvQIgMEuzF7vAXWd/TUWsXTNRzR98AP48rgZsWT1rsZi/75k=-----END RSA PRIVATE KEY-----",
+                          }
+                   },
+                   "success": true,
+                   "status": 201
+                 }
+
+  /{name}:
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "name": "client-1",
+                  "description": "web application /w cron",
+                  "callback_url": "http://localhost:20001",
+                  "keys": [
+                    {
+                      "name": "vps-u",
+                      "file": "1458955903-56f5e67fc7926",
+                      "alg": "RSA",
+                      "bits": 512,
+                      "created_at": "2016-03-10T01:00:00.324Z",
+                      "expires_at": "2016-06-10T01:00:00.551Z"
+                    }
+                  ]
+                }
+
+
+/settings:
+  description: Settings list, including base-url and public key.
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [
+                {
+                  "name": "base-url",
+                  "description": "The base URL for self. Will be used as the issuer identity.",
+                  "value": "http://localhost:20000"
+                },
+                {
+                  "name": "public-key",
+                  "description": "RSA256 public key.",
+                  "value": "-----BEGIN PUBLIC KEY-----MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBALDRj/Rbp9V+5695VSEQLO+MYJQbsW6P74mdRb2eM8fTl4RNgnvcqqOe+66MWTfh8XaTxr2kIumfUixOoUxSK38CAwEAAQ==-----END PUBLIC KEY-----"
+                }
+              ]
+
+  /{name}:
+    description: Setting item.
+    get:
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "name": "base-url",
+                  "description": "The base URL for self. Will be used as the issuer identity.",
+                  "value": "http://localhost:20000"
+                }
+
+    put:
+      description: Only custom administrator credentials can update.
+      securedBy: [AdminJWTBearer]
+      responses:
+        200:
+          body:
+            application/json:
+              example: true

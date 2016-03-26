@@ -1,10 +1,12 @@
 {
-  "name": "jwtpoc-server",
+  "name": "bogdananton-jwtpoc-server",
   "description": "Gateway",
+  "license": "MIT",
+  "version": "0.1.0",
   "repository": "https://github.com/bogdananton/jwtpoc-server",
   "logo": "https://raw.githubusercontent.com/bogdananton/jwtpoc-server/master/res/logo/icon-assets/icon.png",
-  "keywords": ["jwt", "auth"],
-  "scripts": {
-    "postdeploy": "php bin/boot.php && ./bin/start-server.sh"
-  }
+  "keywords": [
+    "jwt",
+    "auth"
+  ]
 }

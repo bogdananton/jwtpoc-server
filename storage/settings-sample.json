@@ -1,3 +1,29 @@
-{
-  "base-url": "http://localhost:20000"
-}
+[
+  {
+    "name": "base-url",
+    "description": "The base URL for self. Will be used as the issuer identity.",
+    "value": "http://localhost:20000",
+    "type": "string",
+    "public": true,
+    "admin": false,
+    "writable": true
+  },
+  {
+    "name": "public-key",
+    "description": "RSA256 public key.",
+    "value": "mine/mine.pub",
+    "type": "pub",
+    "public": true,
+    "admin": true,
+    "writable": true
+  },
+  {
+    "name": "private-key",
+    "description": "RSA256 private key.",
+    "value": "mine/mine.prv",
+    "type": "prv",
+    "public": false,
+    "admin": true,
+    "writable": true
+  }
+]

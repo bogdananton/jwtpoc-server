@@ -1,8 +1,9 @@
 <?php
-namespace tests;
-
-class SystemTestListener implements PHPUnit_Framework_TestListener
+class SystemTestListener implements \PHPUnit_Framework_TestListener
 {
+    /** @var \GuzzleHttp\Client */
+    protected $client;
+
     /**
      * Constructor.
      *
@@ -10,7 +11,40 @@ class SystemTestListener implements PHPUnit_Framework_TestListener
      */
     public function __construct(array $options = array())
     {
-        die('ok');
+        $this->client = new \GuzzleHttp\Client();
+
+        // optional: kill on every run
+        $this->stopMockingAPI();
+
+        try {
+            $this->client->get(MOCK_API_URL);
+
+        } catch (\Exception $e) {
+            $this->startMockingAPI();
+        }
+    }
+
+    protected function startMockingAPI()
+    {
+        shell_exec('osprey-mock-service -f res/api.raml -p 19999 >> /dev/null &');
+        sleep(3);
+    }
+
+    protected function stopMockingAPI()
+    {
+        shell_exec('kill -9 $(ps aux | grep \'osprey-mock-service\' | awk \'{print $2}\')');
+    }
+
+    public function __destruct()
+    {
+
+        try {
+            $this->client->get(MOCK_API_URL);
+            $this->stopMockingAPI();
+
+        } catch (\Exception $e) {
+            // not running, ignore
+        }
     }
 
     /**

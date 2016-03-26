@@ -9,6 +9,7 @@
     <php>
         <ini name="error_reporting" value="-1" />
         <const name="BASE_URL" value="http://localhost:20000"/>
+        <const name="MOCK_API_URL" value="http://localhost:19999"/>
     </php>
 
     <testsuites>
@@ -27,6 +28,6 @@
     </filter>
 
     <listeners>
-        <listener class="tests/SystemTestsListener" />
+        <listener class="SystemTestListener" file="tests/SystemTestListener.php" />
     </listeners>
 </phpunit>
