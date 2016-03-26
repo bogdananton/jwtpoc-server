@@ -20,9 +20,6 @@ $privateKeyPath = 'mine/default.prv';
 $rsa = new phpseclib\Crypt\RSA();
 extract($rsa->createKey(512));
 
-file_put_contents($keyPath . $publicKeyPath, $privatekey);
-file_put_contents($keyPath . $privateKeyPath, $publickey);
-
 // set settings
 $contents = file_get_contents($settingsTemplateFile);
 
@@ -38,10 +35,17 @@ foreach ($settingsContent as $index => $item) {
     }
 }
 
+// store keys
+file_put_contents($keyPath . $publicKeyPath, $privatekey);
+file_put_contents($keyPath . $privateKeyPath, $publickey);
+
+// store settings
 file_put_contents($settingsDestinationFile, json_encode($settingsContent, JSON_PRETTY_PRINT));
 
 // set empty clients list
 file_put_contents($clientsDestinationFile, json_encode([], JSON_PRETTY_PRINT));
 
+// set boot flag
+file_put_contents($storagePath . '.boot', microtime());
 
 echo PHP_EOL . 'Done.' . PHP_EOL . PHP_EOL;

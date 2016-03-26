@@ -19,6 +19,7 @@ class Kernel extends Container
 
     public function __construct()
     {
+        $this->prepareEnvironment();
         $this->setRouter();
         $this->initRoutes();
     }
@@ -63,5 +64,23 @@ class Kernel extends Container
         $response->send();
 
         return $response;
+    }
+
+    protected function prepareEnvironment()
+    {
+        // @todo refactor
+        $settingsFile = __DIR__ . '/../../storage/persistence/settings.json';
+        $baseUrl = '';
+
+        if (file_exists($settingsFile)) {
+            $data = json_decode(file_get_contents($settingsFile));
+            foreach ($data as $item) {
+                if ($item->name == 'base-url') {
+                    $baseUrl = $item->value . '/api';
+                }
+            }
+        }
+
+        define('ACTUAL_API_URL', $baseUrl);
     }
 }

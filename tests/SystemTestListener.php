@@ -37,7 +37,6 @@ class SystemTestListener implements \PHPUnit_Framework_TestListener
 
     public function __destruct()
     {
-
         try {
             $this->client->get(MOCK_API_URL);
             $this->stopMockingAPI();

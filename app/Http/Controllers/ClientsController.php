@@ -1,7 +1,12 @@
 <?php
 namespace JWTPOC\Http\Controllers;
 
-class ClientsController
-{
+use Illuminate\Routing\Controller;
 
+class ClientsController extends Controller
+{
+    public function getListing()
+    {
+        return [];
+    }
 }

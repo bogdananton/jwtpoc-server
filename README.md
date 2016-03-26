@@ -7,7 +7,7 @@
 
 - [x] use RAML with mocking and system tests
 - [x] create boot-up bin tool (will create default folders / settings)
-- [ ] implement routes for introspection
+- [x] implement routes for introspection
 - [ ] generate admin token with long TTL (as a bin helper tool)
 - [ ] set maintenance (settings) routes and actions
 - [ ] create register client routes
@@ -80,3 +80,11 @@ Validation is enforced at the structure / behavior level, not specific for the m
 This ensures that switching to the real API will not invalidate these tests.
 
 When no entries are found, mark test as skipped.
+
+
+----
+
+#### TODOs / fixme
+
+- [ ] refactor getting the settings from the app (@see Http\Kernel->prepareEnvironment())
+- [ ] add tests for contents returned by GET api/client and GET api/settings
