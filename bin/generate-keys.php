@@ -1,4 +1,5 @@
 <?php
+// @todo use symfony console instead
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $rsa = new phpseclib\Crypt\RSA();
@@ -10,7 +11,7 @@ extract($rsa->createKey(512));
 
 $keyFilename = time() . '-' . uniqid();
 
-file_put_contents($keyFilename . '.prv', $privatekey);
 file_put_contents($keyFilename . '.pub', $publickey);
+file_put_contents($keyFilename . '.prv', $privatekey);
 
 echo PHP_EOL . sprintf('Pair %s generated.', $keyFilename) . PHP_EOL . PHP_EOL;

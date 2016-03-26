@@ -1,6 +1,6 @@
 # ignore default
-mine.prv
-mine.pub
+default.prv
+default.pub
 
 # ignore all
-# *
+*

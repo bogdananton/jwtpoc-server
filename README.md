@@ -7,7 +7,6 @@
 
 - [x] use RAML with mocking and system tests
 - [x] create boot-up bin tool (will create default folders / settings)
-- [x] include frontend dependencies
 - [ ] implement routes for introspection
 - [ ] generate admin token with long TTL (as a bin helper tool)
 - [ ] set maintenance (settings) routes and actions
@@ -15,12 +14,14 @@
 - [ ] when creating a new client, generate a key, assign and deliver the private key without storing it
 - [ ] create route to expose own public key (in settings)
 - [ ] setup Selenium environment
+- [x] include frontend dependencies
+- [ ] collect logs
 - [ ] build a dashboard for overview / quick access
 - [ ] build frontend for client registration
 
 RAML is put in place to ensure the blueprint and system tests golden master / expected actions and content structure.
 
-Run `npm install`.
+Run `npm install` to grab frontend dependencies and `./bin/start-server.sh`.
 
 ----
 

@@ -11,7 +11,7 @@
   {
     "name": "public-key",
     "description": "RSA256 public key.",
-    "value": "mine/mine.pub",
+    "value": "mine/default.pub",
     "type": "pub",
     "public": true,
     "admin": true,
@@ -20,7 +20,7 @@
   {
     "name": "private-key",
     "description": "RSA256 private key.",
-    "value": "mine/mine.prv",
+    "value": "mine/default.prv",
     "type": "prv",
     "public": false,
     "admin": true,
