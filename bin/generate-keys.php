@@ -1,6 +1,4 @@
 <?php
-// phpseclib/phpseclib is required to use this, so run composer update --dev
-
 require_once __DIR__ . '/../vendor/autoload.php';
 
 $rsa = new phpseclib\Crypt\RSA();
@@ -15,4 +13,4 @@ $keyFilename = time() . '-' . uniqid();
 file_put_contents($keyFilename . '.prv', $privatekey);
 file_put_contents($keyFilename . '.pub', $publickey);
 
-echo PHP_EOL . sprintfs('Pair %s generated.', $keyFilename) . PHP_EOL . PHP_EOL;
+echo PHP_EOL . sprintf('Pair %s generated.', $keyFilename) . PHP_EOL . PHP_EOL;
