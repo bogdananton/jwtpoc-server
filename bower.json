@@ -1,0 +1,25 @@
+{
+  "name": "bogdananton-jwtpoc-server",
+  "description": "Gateway",
+  "main": "",
+  "authors": [
+    "Bogdan Anton <contact@bogdananton.ro>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jwt",
+    "auth"
+  ],
+  "homepage": "https://github.com/bogdananton/jwtpoc-server",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

@@ -6,15 +6,21 @@
 #### Plan / TODOs
 
 - [x] use RAML with mocking and system tests
+- [x] create boot-up bin tool (will create default folders / settings)
+- [x] include frontend dependencies
 - [ ] implement routes for introspection
 - [ ] generate admin token with long TTL (as a bin helper tool)
-- [x] create boot-up bin tool (will create default folders / settings)
 - [ ] set maintenance (settings) routes and actions
 - [ ] create register client routes
 - [ ] when creating a new client, generate a key, assign and deliver the private key without storing it
 - [ ] create route to expose own public key (in settings)
+- [ ] setup Selenium environment
+- [ ] build a dashboard for overview / quick access
+- [ ] build frontend for client registration
 
 RAML is put in place to ensure the blueprint and system tests golden master / expected actions and content structure.
+
+Run `npm install`.
 
 ----
 

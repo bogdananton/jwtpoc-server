@@ -1,2 +1,10 @@
 composer.lock
 node_modules/
+
+# @todo merge dist folders
+public/bootstrap/
+public/jquery/
+
+# public/fonts/
+# public/js/
+# public/styles/
