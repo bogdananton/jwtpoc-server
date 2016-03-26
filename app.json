@@ -1,0 +1,7 @@
+{
+  "name": "JWT - POC spike - Server part",
+  "description": "",
+  "repository": "https://github.com/bogdananton/jwtpoc-server",
+  "logo": "https://raw.githubusercontent.com/bogdananton/jwtpoc-server/master/res/logo/icon-assets/icon.png",
+  "keywords": ["jwt", "auth"]
+}
