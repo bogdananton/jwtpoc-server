@@ -4,9 +4,15 @@
   "license": "MIT",
   "require": {
     "neneaX/multi-routing": "v0.1.1",
-    "symfony/console": "v2.*"
+    "symfony/console": "v2.*",
+    "phpseclib/phpseclib": "2.0.1"
   },
   "require-dev": {
-    "phpseclib/phpseclib": "2.0.1"
+    "guzzlehttp/guzzle": "6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "JWTPOC\\": "app/"
+    }
   }
 }

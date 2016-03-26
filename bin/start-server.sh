@@ -1,2 +1,2 @@
 # start
-php -S localhost:20000 -t ../public
+php -S localhost:20000 -t public
