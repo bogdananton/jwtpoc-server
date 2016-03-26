@@ -5,14 +5,16 @@
 
 #### Plan / TODOs
 
-* use RAML with mocking, system tests
-* implement routes for introspection
-* generate admin token with long TTL (as a bin helper tool)
-* create boot-up bin tool (will create default folders / settings)
-* set maintenance (settings) routes and actions
-* create register client routes
-* when creating a new client, generate a key, assign and deliver the private key without storing it
-* create route to expose own public key (in settings)
+- [x] use RAML with mocking and system tests
+- [ ] implement routes for introspection
+- [ ] generate admin token with long TTL (as a bin helper tool)
+- [x] create boot-up bin tool (will create default folders / settings)
+- [ ] set maintenance (settings) routes and actions
+- [ ] create register client routes
+- [ ] when creating a new client, generate a key, assign and deliver the private key without storing it
+- [ ] create route to expose own public key (in settings)
+
+RAML is put in place to ensure the blueprint and system tests golden master / expected actions and content structure.
 
 ----
 
