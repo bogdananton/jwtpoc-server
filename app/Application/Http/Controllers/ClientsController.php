@@ -1,5 +1,5 @@
 <?php
-namespace JWTPOC\Http\Controllers;
+namespace JWTPOC\Application\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 

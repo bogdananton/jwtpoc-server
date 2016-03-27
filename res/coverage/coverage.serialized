@@ -1,7 +1,10 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Config/routes.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/dependencies.php' => 
+  array (
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/routes.php' => 
   array (
     5 => 
     array (
@@ -49,7 +52,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/ClientsController.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/ClientsController.php' => 
   array (
     9 => 
     array (
@@ -61,7 +64,7 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/IntrospectionController.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/IntrospectionController.php' => 
   array (
     10 => 
     array (
@@ -112,10 +115,10 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/KeysController.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/KeysController.php' => 
   array (
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/SettingsController.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => 
   array (
     9 => 
     array (
@@ -127,21 +130,153 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Kernel.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Kernel.php' => 
   array (
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    71 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    78 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    86 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    88 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Infrastructure/Services/Settings.php' => 
+  array (
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
     21 => 
     array (
     ),
     22 => 
     array (
     ),
-    23 => 
-    array (
-    ),
-    24 => 
-    array (
-    ),
     25 => 
+    array (
+    ),
+    26 => 
     array (
     ),
     28 => 
@@ -165,100 +300,31 @@ $coverage->setData(array (
     34 => 
     array (
     ),
-    37 => 
+    35 => 
     array (
     ),
-    38 => 
+    36 => 
     array (
     ),
-    39 => 
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => 
+  array (
+    3 => 
     array (
     ),
-    42 => 
+    7 => 
     array (
     ),
-    43 => 
+    8 => 
     array (
     ),
-    44 => 
+    9 => 
     array (
     ),
-    45 => 
+    11 => 
     array (
     ),
-    52 => 
-    array (
-    ),
-    53 => 
-    array (
-    ),
-    54 => 
-    array (
-    ),
-    56 => 
-    array (
-    ),
-    57 => 
-    array (
-    ),
-    59 => 
-    array (
-    ),
-    60 => 
-    array (
-    ),
-    61 => 
-    array (
-    ),
-    63 => 
-    array (
-    ),
-    64 => 
-    array (
-    ),
-    66 => 
-    array (
-    ),
-    67 => 
-    array (
-    ),
-    70 => 
-    array (
-    ),
-    72 => 
-    array (
-    ),
-    73 => 
-    array (
-    ),
-    75 => 
-    array (
-    ),
-    76 => 
-    array (
-    ),
-    77 => 
-    array (
-    ),
-    78 => 
-    array (
-    ),
-    79 => 
-    array (
-    ),
-    80 => 
-    array (
-    ),
-    81 => 
-    array (
-    ),
-    82 => 
-    array (
-    ),
-    84 => 
-    array (
-    ),
-    85 => 
+    12 => 
     array (
     ),
   ),
@@ -273,12 +339,15 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Config/routes.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/ClientsController.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/IntrospectionController.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/KeysController.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Controllers/SettingsController.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Http/Kernel.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/dependencies.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/routes.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/ClientsController.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/IntrospectionController.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/KeysController.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Kernel.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Infrastructure/Services/Settings.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => true,
 ));
 
 return $coverage;

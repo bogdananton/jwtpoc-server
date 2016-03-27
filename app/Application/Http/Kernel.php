@@ -1,10 +1,11 @@
 <?php
-namespace JWTPOC\Http;
+namespace JWTPOC\Application\Http;
 
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use JWTPOC\Infrastructure\Services\Settings;
 use MultiRouting\Router;
 use MultiRouting\Adapters\Main\Adapter as MainAdapter;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
@@ -17,8 +18,14 @@ class Kernel extends Container
      */
     protected $router;
 
-    public function __construct()
+    /** @var  Settings */
+    protected $settings;
+
+    public function __construct(Settings $settings)
     {
+        $this->settings = $settings;
+
+        $this->prepareDependencies();
         $this->prepareEnvironment();
         $this->setRouter();
         $this->initRoutes();
@@ -36,6 +43,11 @@ class Kernel extends Container
     protected function initRoutes()
     {
         require __DIR__ . '/Config/routes.php';
+    }
+
+    protected function prepareDependencies()
+    {
+        require __DIR__ . '/Config/dependencies.php';
     }
 
     public function run()
@@ -68,19 +80,12 @@ class Kernel extends Container
 
     protected function prepareEnvironment()
     {
-        // @todo refactor
-        $settingsFile = __DIR__ . '/../../storage/persistence/settings.json';
-        $baseUrl = '';
+        $baseUrlSetting = $this->settings->findByName('base-url');
 
-        if (file_exists($settingsFile)) {
-            $data = json_decode(file_get_contents($settingsFile));
-            foreach ($data as $item) {
-                if ($item->name == 'base-url') {
-                    $baseUrl = $item->value . '/api';
-                }
-            }
+        if ($baseUrlSetting) {
+            // @todo use mappers
+//            define('ACTUAL_API_URL', $baseUrlSetting->getValue() . '/api');
+            define('ACTUAL_API_URL', $baseUrlSetting->value . '/api');
         }
-
-        define('ACTUAL_API_URL', $baseUrl);
     }
 }

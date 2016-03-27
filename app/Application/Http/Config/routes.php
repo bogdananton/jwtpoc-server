@@ -12,15 +12,15 @@ $router->get('test-url', function () {
 
 $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('', [
-        'uses' => '\JWTPOC\Http\Controllers\IntrospectionController@get',
+        'uses' => '\JWTPOC\Application\Http\Controllers\IntrospectionController@get',
     ]);
 
     $router->get('clients', [
-        'uses' => '\JWTPOC\Http\Controllers\ClientsController@getListing',
+        'uses' => '\JWTPOC\Application\Http\Controllers\ClientsController@getListing',
     ]);
 
     $router->get('settings', [
-        'uses' => '\JWTPOC\Http\Controllers\SettingsController@getListing',
+        'uses' => '\JWTPOC\Application\Http\Controllers\SettingsController@getListing',
     ]);
 });
 
