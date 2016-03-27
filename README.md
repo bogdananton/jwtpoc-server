@@ -9,10 +9,11 @@
 - [x] create boot-up bin tool (will create default folders / settings)
 - [x] implement routes for introspection
 - [ ] generate admin token with long TTL (as a bin helper tool)
-- [ ] set maintenance (settings) routes and actions
+- [x] build getter routes and actions for settings
+- [ ] build setter / maintenance routes and actions for settings
 - [ ] create register client routes
 - [ ] when creating a new client, generate a key, assign and deliver the private key without storing it
-- [ ] create route to expose own public key (in settings)
+- [x] create route to expose own public key (in settings)
 - [ ] setup Selenium environment
 - [x] include frontend dependencies
 - [ ] collect logs

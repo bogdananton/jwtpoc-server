@@ -607,12 +607,6 @@ $coverage->setData(array (
     23 => 
     array (
     ),
-    24 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/ClientsController.php' => 
   array (
@@ -682,22 +676,52 @@ $coverage->setData(array (
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => 
   array (
-    16 => 
+    19 => 
     array (
     ),
-    17 => 
-    array (
-    ),
-    18 => 
+    20 => 
     array (
     ),
     21 => 
     array (
     ),
-    22 => 
+    24 => 
     array (
     ),
-    23 => 
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
     array (
     ),
   ),
@@ -886,9 +910,6 @@ $coverage->setData(array (
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Application/Http/Controller.php' => 
   array (
-    22 => 
-    array (
-    ),
     23 => 
     array (
     ),
@@ -898,13 +919,13 @@ $coverage->setData(array (
     25 => 
     array (
     ),
-    31 => 
+    26 => 
     array (
     ),
     32 => 
     array (
     ),
-    35 => 
+    33 => 
     array (
     ),
     36 => 
@@ -925,7 +946,7 @@ $coverage->setData(array (
     41 => 
     array (
     ),
-    43 => 
+    42 => 
     array (
     ),
     44 => 
@@ -934,13 +955,58 @@ $coverage->setData(array (
     45 => 
     array (
     ),
-    47 => 
+    46 => 
     array (
     ),
     48 => 
     array (
     ),
     49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    61 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
     array (
     ),
   ),

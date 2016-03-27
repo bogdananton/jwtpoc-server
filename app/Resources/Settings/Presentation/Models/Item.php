@@ -37,4 +37,9 @@ class Item
             'value' => $this->getValue(),
         ];
     }
+
+    public function __toString()
+    {
+        return json_encode($this->toArray(), JSON_PRETTY_PRINT);
+    }
 }

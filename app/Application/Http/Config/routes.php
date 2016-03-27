@@ -19,8 +19,10 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         'uses' => '\JWTPOC\Application\Http\Controllers\ClientsController@getListing',
     ]);
 
-    $router->get('settings', [
-        'uses' => '\JWTPOC\Application\Http\Controllers\SettingsController@getListing',
+    $router->resource('settings', '\JWTPOC\Application\Http\Controllers\SettingsController');
+
+    $router->get('settings/{name}/{attr}', [
+        'uses' => '\JWTPOC\Application\Http\Controllers\SettingsController@getItemAttribute',
     ]);
 });
 

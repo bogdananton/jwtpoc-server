@@ -1,12 +1,12 @@
 
 
 Code Coverage Report:     
-  2016-03-27 22:25:59     
+  2016-03-27 22:42:21     
                           
  Summary:                 
   Classes: 33.33% (6/18)  
-  Methods: 41.67% (20/48) 
-  Lines:   30.60% (86/281)
+  Methods: 40.00% (20/50) 
+  Lines:   28.38% (86/303)
 
 \JWTPOC\Resources\Settings\Domain::Factory
   Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)

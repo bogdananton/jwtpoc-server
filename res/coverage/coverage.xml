@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1459106759">
-  <project timestamp="1459106759">
+<coverage generated="1459107741">
+  <project timestamp="1459107741">
     <file name="/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/dependencies.php">
       <line num="5" type="stmt" count="0"/>
       <line num="7" type="stmt" count="0"/>
@@ -37,9 +37,7 @@
       <line num="20" type="stmt" count="0"/>
       <line num="22" type="stmt" count="0"/>
       <line num="23" type="stmt" count="0"/>
-      <line num="24" type="stmt" count="0"/>
-      <line num="25" type="stmt" count="0"/>
-      <metrics loc="26" ncloc="25" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="15" coveredelements="0"/>
+      <metrics loc="24" ncloc="23" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="13" coveredstatements="0" elements="13" coveredelements="0"/>
     </file>
     <package name="JWTPOC\Application\Http\Controllers">
       <file name="/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/ClientsController.php">
@@ -83,17 +81,28 @@
       </file>
       <file name="/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php">
         <class name="SettingsController" namespace="JWTPOC\Application\Http\Controllers">
-          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="19" coveredelements="0"/>
         </class>
-        <line num="15" type="method" name="__construct" crap="2" count="0"/>
-        <line num="16" type="stmt" count="0"/>
-        <line num="17" type="stmt" count="0"/>
-        <line num="18" type="stmt" count="0"/>
-        <line num="20" type="method" name="getListing" crap="2" count="0"/>
+        <line num="18" type="method" name="__construct" crap="2" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
         <line num="21" type="stmt" count="0"/>
-        <line num="22" type="stmt" count="0"/>
-        <line num="23" type="stmt" count="0"/>
-        <metrics loc="24" ncloc="20" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        <line num="23" type="method" name="index" crap="2" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="28" type="method" name="show" crap="12" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <metrics loc="41" ncloc="37" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="0" elements="19" coveredelements="0"/>
       </file>
     </package>
     <package name="JWTPOC\Application\Http">
@@ -194,30 +203,45 @@
     <package name="JWTPOC\Resources\Settings\Application\Http">
       <file name="/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Application/Http/Controller.php">
         <class name="Controller" namespace="JWTPOC\Resources\Settings\Application\Http">
-          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="21" coveredelements="0"/>
+          <metrics methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="0" elements="36" coveredelements="0"/>
         </class>
-        <line num="21" type="method" name="__construct" crap="2" count="0"/>
-        <line num="22" type="stmt" count="0"/>
+        <line num="22" type="method" name="__construct" crap="2" count="0"/>
         <line num="23" type="stmt" count="0"/>
         <line num="24" type="stmt" count="0"/>
         <line num="25" type="stmt" count="0"/>
-        <line num="30" type="method" name="getListing" crap="12" count="0"/>
-        <line num="31" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="31" type="method" name="getListing" crap="12" count="0"/>
         <line num="32" type="stmt" count="0"/>
-        <line num="35" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
         <line num="36" type="stmt" count="0"/>
         <line num="37" type="stmt" count="0"/>
         <line num="38" type="stmt" count="0"/>
         <line num="39" type="stmt" count="0"/>
         <line num="40" type="stmt" count="0"/>
         <line num="41" type="stmt" count="0"/>
-        <line num="43" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
         <line num="44" type="stmt" count="0"/>
         <line num="45" type="stmt" count="0"/>
-        <line num="47" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
         <line num="48" type="stmt" count="0"/>
         <line num="49" type="stmt" count="0"/>
-        <metrics loc="50" ncloc="39" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="21" coveredelements="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="52" type="method" name="getItem" crap="12" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <metrics loc="70" ncloc="59" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="33" coveredstatements="0" elements="36" coveredelements="0"/>
       </file>
     </package>
     <package name="JWTPOC\Resources\Settings\Domain">
@@ -475,6 +499,6 @@
       <line num="28" type="stmt" count="0"/>
       <metrics loc="33" ncloc="25" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="0" elements="19" coveredelements="0"/>
     </file>
-    <metrics files="23" loc="853" ncloc="703" classes="18" methods="48" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="281" coveredstatements="86" elements="329" coveredelements="106"/>
+    <metrics files="23" loc="888" ncloc="738" classes="18" methods="50" coveredmethods="20" conditionals="0" coveredconditionals="0" statements="303" coveredstatements="86" elements="353" coveredelements="106"/>
   </project>
 </coverage>
