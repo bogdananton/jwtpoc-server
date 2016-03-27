@@ -36,8 +36,8 @@ foreach ($settingsContent as $index => $item) {
 }
 
 // store keys
-file_put_contents($keyPath . $publicKeyPath, $privatekey);
-file_put_contents($keyPath . $privateKeyPath, $publickey);
+file_put_contents($keyPath . $publicKeyPath, $publickey);
+file_put_contents($keyPath . $privateKeyPath, $privatekey);
 
 // store settings
 file_put_contents($settingsDestinationFile, json_encode($settingsContent, JSON_PRETTY_PRINT));

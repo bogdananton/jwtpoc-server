@@ -39,6 +39,10 @@ $coverage->setData(array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
     ),
     44 => NULL,
+    51 => 
+    array (
+    ),
+    52 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Repository.php' => 
   array (
@@ -72,17 +76,16 @@ $coverage->setData(array (
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
       2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
     ),
-    51 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
-    ),
     52 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
       2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    53 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
     54 => 
     array (
@@ -91,98 +94,167 @@ $coverage->setData(array (
     ),
     55 => 
     array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    56 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
+    56 => NULL,
     57 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-    ),
-    60 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    61 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    62 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    64 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    65 => NULL,
-    66 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
     ),
-    67 => 
+    58 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
     ),
+    65 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    68 => 
+    array (
+    ),
+    69 => 
+    array (
+    ),
+    70 => 
+    array (
+    ),
+    72 => 
+    array (
+    ),
+    73 => NULL,
+    81 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    82 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    84 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    85 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+    ),
+    88 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    89 => NULL,
+    97 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    99 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    100 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    101 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    102 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    103 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    104 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    106 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    107 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Factory.php' => 
   array (
-    17 => 
+    18 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    19 => 
+    20 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    20 => NULL,
+    21 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Models/Item.php' => 
   array (
-    11 => 
+    20 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    12 => 
+    21 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    13 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    17 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
-    ),
-    18 => NULL,
     22 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
-    23 => NULL,
+    23 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    24 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    28 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    29 => NULL,
+    33 => 
+    array (
+    ),
+    34 => NULL,
+    38 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    39 => NULL,
+    43 => 
+    array (
+    ),
+    44 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Gateways/JSONFile.php' => 
   array (
-    28 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
-    ),
     29 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
@@ -198,48 +270,301 @@ $coverage->setData(array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    35 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
-    ),
-    36 => 
-    array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
-      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
-    ),
-    38 => 
+    32 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
     39 => 
     array (
-      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
     40 => 
     array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    42 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    43 => 
+    array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    45 => 
+    44 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    46 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    47 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    48 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
     49 => 
     array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    50 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    51 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    52 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    53 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    54 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    55 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    56 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    57 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    58 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    63 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    67 => 
+    array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    50 => NULL,
+    68 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Factory.php' => 
   array (
-    12 => 
+    17 => 
     array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
     ),
+    18 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    19 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    20 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    21 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    22 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    23 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    25 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    27 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    28 => NULL,
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Models/Item.php' => 
+  array (
+    36 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    37 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    38 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    39 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    40 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    41 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    42 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    43 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      2 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    47 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    48 => NULL,
+    52 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    53 => NULL,
+    57 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    58 => NULL,
+    62 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    63 => NULL,
+    67 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    68 => NULL,
+    72 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenRegularStringEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue',
+    ),
+    73 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/dependencies.php' => 
   array (
+    5 => 
+    array (
+    ),
+    7 => 
+    array (
+    ),
+    8 => 
+    array (
+    ),
+    9 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/routes.php' => 
   array (
@@ -357,13 +682,22 @@ $coverage->setData(array (
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => 
   array (
-    9 => 
+    16 => 
     array (
     ),
-    10 => 
+    17 => 
     array (
     ),
-    11 => 
+    18 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
     array (
     ),
   ),
@@ -550,20 +884,68 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Models/Item.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Application/Http/Controller.php' => 
   array (
-    10 => 
+    22 => 
     array (
     ),
-    11 => 
+    23 => 
     array (
     ),
-    12 => 
+    24 => 
     array (
     ),
-    13 => 
+    25 => 
     array (
     ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Factory.php' => 
+  array (
     16 => 
     array (
     ),
@@ -583,21 +965,12 @@ $coverage->setData(array (
     array (
     ),
   ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => 
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Models/Collection.php' => 
   array (
-    3 => 
+    8 => 
     array (
     ),
-    5 => 
-    array (
-    ),
-    6 => 
-    array (
-    ),
-    7 => 
-    array (
-    ),
-    9 => 
+    10 => 
     array (
     ),
     11 => 
@@ -606,13 +979,22 @@ $coverage->setData(array (
     12 => 
     array (
     ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Models/Item.php' => 
+  array (
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
     14 => 
     array (
     ),
     15 => 
-    array (
-    ),
-    16 => 
     array (
     ),
     18 => 
@@ -624,7 +1006,7 @@ $coverage->setData(array (
     20 => 
     array (
     ),
-    22 => 
+    23 => 
     array (
     ),
     24 => 
@@ -633,13 +1015,94 @@ $coverage->setData(array (
     25 => 
     array (
     ),
-    27 => 
-    array (
-    ),
     28 => 
     array (
     ),
     29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => 
+  array (
+    2 => 
+    array (
+    ),
+    4 => 
+    array (
+    ),
+    5 => 
+    array (
+    ),
+    6 => 
+    array (
+    ),
+    8 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
     array (
     ),
   ),
@@ -700,6 +1163,7 @@ $filter->setWhitelistedFiles(array (
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Contracts/Settings/Gateway.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Factory.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Gateway.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Application/Http/Controller.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Factory.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Models/Item.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Service.php' => true,
@@ -707,6 +1171,9 @@ $filter->setWhitelistedFiles(array (
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Gateways/JSONFile.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Models/Item.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Repository.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Factory.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Models/Collection.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Presentation/Models/Item.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => true,
 ));
 

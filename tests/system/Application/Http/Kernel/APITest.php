@@ -5,8 +5,8 @@ use GuzzleHttp\Client;
 
 class APITest extends \PHPUnit_Framework_TestCase
 {
-    const PERSISTENCE_PATH = __DIR__ . '/../../storage/persistence/';
-    const KEYS_PATH = __DIR__ . '/../../storage/keys/';
+    const PERSISTENCE_PATH = ROOT_PATH . 'storage/persistence/';
+    const KEYS_PATH = ROOT_PATH . 'storage/keys/';
 
     protected $client;
 
@@ -157,12 +157,13 @@ class APITest extends \PHPUnit_Framework_TestCase
                 static::assertEquals($foundSetting->value, $entry->value);
 
             } else if ($foundSetting->type == 'pub') {
-                $path = KEYS_PATH . $foundSetting->value;
+                $path = self::KEYS_PATH . $foundSetting->value;
 
                 $keyContents = file_get_contents($path);
                 $keyContents = str_replace([PHP_EOL, "\n", "\r\n"], '', $keyContents);
+                $actual = str_replace([PHP_EOL, "\n", "\r\n"], '', $entry->value);
 
-                static::assertEquals($keyContents, $entry->value);
+                static::assertEquals($keyContents, $actual);
 
             } else {
                 static::fail(

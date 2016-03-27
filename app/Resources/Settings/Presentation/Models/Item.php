@@ -1,26 +1,17 @@
 <?php
-namespace JWTPOC\Resources\Settings\Domain\Models;
+namespace JWTPOC\Resources\Settings\Presentation\Models;
 
 class Item
 {
-    /** @var  string */
     protected $name;
-
-    /** @var  string */
     protected $description;
-
-    /** @var  string */
     protected $value;
 
-    /** @var  bool */
-    protected $isPublic;
-
-    public function __construct($name, $description, $value, $isPublic)
+    public function __construct($name, $description, $value)
     {
         $this->name = $name;
         $this->description = $description;
         $this->value = $value;
-        $this->isPublic = $isPublic;
     }
 
     public function getName()
@@ -38,8 +29,12 @@ class Item
         return $this->value;
     }
 
-    public function isPublic()
+    public function toArray()
     {
-        return $this->isPublic;
+        return [
+            'name' => $this->getName(),
+            'description' => $this->getDescription(),
+            'value' => $this->getValue(),
+        ];
     }
 }

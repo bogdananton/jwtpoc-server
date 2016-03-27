@@ -48,21 +48,61 @@ class Repository
     {
         $entries = $this->settingsGateway->all();
 
+        /** @var \JWTPOC\Resources\Settings\Persistence\Models\Item $entry */
         foreach ($entries as $entry) {
-            if ($entry->name === $name) {
-                // @todo again, use a mapper
-                if ($entry->type == 'pub' || $entry->type == 'prv') {
-                    $value = $this->keysGateway->getContents($entry->value);
-                } else {
-                    $value = $entry->value;
-                }
-
-                return $this->factory->buildSettingsItem(
-                    $entry->name,
-                    $entry->description,
-                    $value
-                );
+            if ($entry->getName() === $name) {
+                $item = $this->buildItem($entry);
+                return $item;
             }
         }
+    }
+
+    /**
+     * @return Item[]
+     */
+    public function getEntries()
+    {
+        $response = [];
+        $entries = $this->settingsGateway->all();
+
+        foreach ($entries as $entry) {
+            $response[] = $this->buildItem($entry);
+        }
+
+        return $response;
+    }
+
+    /**
+     * @param \JWTPOC\Resources\Settings\Persistence\Models\Item $entry
+     * @return string
+     */
+    protected function getEntryValueContents($entry)
+    {
+        if ($entry->isKey()) {
+            $value = $this->keysGateway->getContents($entry->getValue());
+
+        } else {
+            $value = $entry->getValue();
+        }
+
+        return $value;
+    }
+
+    /**
+     * @param \JWTPOC\Resources\Settings\Persistence\Models\Item $entry
+     * @return Item
+     */
+    protected function buildItem($entry)
+    {
+        $value = $this->getEntryValueContents($entry);
+
+        $item = $this->factory->buildSettingsItem(
+            $entry->getName(),
+            $entry->getDescription(),
+            $value,
+            $entry->isPublic()
+        );
+
+        return $item;
     }
 }

@@ -3,6 +3,7 @@ namespace JWTPOC\Resources\Settings\Persistence\Gateways;
 
 use JWTPOC\Contracts\Settings\Gateway;
 use JWTPOC\Resources\Settings\Persistence\Factory;
+use JWTPOC\Resources\Settings\Persistence\Models\Item;
 use Symfony\Component\Filesystem\Filesystem;
 
 class JSONFile implements Gateway
@@ -30,14 +31,31 @@ class JSONFile implements Gateway
         $this->factory = $factory;
     }
 
+    /**
+     * @return Item[]
+     */
     public function all()
     {
         $settingsFile = $this->path;
-        $data = [];
+        $response = [];
 
         if ($this->fs->exists($settingsFile)) {
             $contents = file_get_contents($settingsFile);
             $data = json_decode($contents);
+
+            if (is_array($data)) {
+                foreach ($data as $entry) {
+                    $response[] = $this->factory->buildItem(
+                        $entry->name,
+                        $entry->description,
+                        $entry->value,
+                        $entry->type,
+                        $entry->public,
+                        $entry->admin,
+                        $entry->writable
+                    );
+                }
+            }
 
             // @todo ensure that the proper structure is returned in the resulting array
             // ...
@@ -46,6 +64,6 @@ class JSONFile implements Gateway
             // @todo log this
         }
 
-        return !empty($data) && is_array($data) ? $data : [];
+        return $response;
     }
 }

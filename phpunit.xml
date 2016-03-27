@@ -10,6 +10,7 @@
         <const name="BASE_URL" value="http://localhost:20000"/>
         <const name="MOCK_API_URL" value="http://localhost:19999"/>
         <const name="ACTUAL_API_URL" value="http://localhost:20000/api"/>
+        <const name="ROOT_PATH" value="./"/>
     </php>
 
     <logging>

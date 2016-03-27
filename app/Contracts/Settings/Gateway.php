@@ -1,10 +1,12 @@
 <?php
 namespace JWTPOC\Contracts\Settings;
 
+use JWTPOC\Resources\Settings\Persistence\Models\Item;
+
 interface Gateway
 {
     /**
-     * @return array
+     * @return Item[]
      */
     public function all();
 }

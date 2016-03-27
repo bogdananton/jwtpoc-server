@@ -42,4 +42,12 @@ class Service
 
         throw new NotFoundResourceException();
     }
+
+    /**
+     * @return Models\Item[]
+     */
+    public function getEntries()
+    {
+        return $this->repository->getEntries();
+    }
 }

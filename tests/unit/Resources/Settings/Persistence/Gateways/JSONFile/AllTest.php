@@ -15,6 +15,7 @@ namespace JWTPOCUnitTests\Resources\Persistence\Gateways\JSONFile;
 
 use JWTPOC\Resources\Settings\Persistence\Factory;
 use JWTPOC\Resources\Settings\Persistence\Gateways\JSONFile;
+use JWTPOC\Resources\Settings\Persistence\Models\Item;
 use Symfony\Component\Filesystem\Filesystem;
 
 class AllTest extends \PHPUnit_Framework_TestCase
@@ -75,14 +76,22 @@ class AllTest extends \PHPUnit_Framework_TestCase
     {
         $contents = [
             (object)[
-                'name' => 'n1',
-                'description' => 'd1',
-                'value' => 'v1',
+                'name' => 'name-1',
+                'description' => 'description-1',
+                'value' => 'value-1',
+                'type' => 'type-1',
+                'public' => true,
+                'admin' => true,
+                'writable' => true,
             ],
             (object)[
-                'name' => 'n2',
-                'description' => 'd2',
-                'value' => 'v2',
+                'name' => 'name-2',
+                'description' => 'description-2',
+                'value' => 'value-2',
+                'type' => 'type-2',
+                'public' => true,
+                'admin' => true,
+                'writable' => true,
             ],
         ];
 
@@ -103,6 +112,20 @@ class AllTest extends \PHPUnit_Framework_TestCase
         self::$systemMock = $mock;
 
         $response = $this->gateway->all();
-        static::assertEquals($contents, $response);
+
+        $expected = [];
+        foreach ($contents as $content) {
+            $expected[] = new Item(
+                $content->name,
+                $content->description,
+                $content->value,
+                $content->type,
+                $content->public,
+                $content->admin,
+                $content->writable
+            );
+        }
+
+        static::assertEquals($expected, $response);
     }
 }

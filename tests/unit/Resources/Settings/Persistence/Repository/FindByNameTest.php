@@ -1,11 +1,13 @@
 <?php
 namespace JWTPOCUnitTests\Resources\Persistence\Repository;
 
-use JWTPOC\Resources\Settings\Domain\Factory;
+use JWTPOC\Resources\Settings\Domain\Factory as DomainFactory;
+use JWTPOC\Resources\Settings\Persistence\Factory as PersistenceFactory;
 use JWTPOC\Resources\Settings\Domain\Models\Item;
 use JWTPOC\Contracts\Settings\Gateway as SettingsGateway;
 use JWTPOC\Contracts\Keys\Gateway as KeysGateway;
 use JWTPOC\Resources\Settings\Persistence\Repository;
+use JWTPOC\Resources\Settings\Persistence\Models\Item as PersistenceItem;
 
 class FindByNameTest extends \PHPUnit_Framework_TestCase
 {
@@ -18,14 +20,14 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
     /** @var  KeysGateway|\Mockery\MockInterface */
     protected $keyGateway;
 
-    /** @var  Factory|\Mockery\MockInterface */
+    /** @var  DomainFactory|\Mockery\MockInterface */
     protected $factory;
 
     public function setUp()
     {
         $this->settingsGateway = \Mockery::mock(SettingsGateway::class)->makePartial();
         $this->keyGateway = \Mockery::mock(KeysGateway::class)->makePartial();
-        $this->factory = \Mockery::mock(Factory::class)->makePartial();
+        $this->factory = \Mockery::mock(DomainFactory::class)->makePartial();
 
         $args = [
             $this->settingsGateway,
@@ -47,21 +49,20 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
     public function testWhenRegularStringEntryIsFoundThenReturnItem()
     {
         $name = 'base-url';
-        $description = 'The base URL for self. Will be used as the issuer identity.';
         $value = 'http://localhost:20000';
 
         $this->factory
             ->shouldReceive('buildSettingsItem')
-            ->once()
-            ->with($name, $description, $value)
             ->passthru();
 
         $settingsSamplePath = RES_PATH . 'persistence/settings-sample.json';
         $list = json_decode(file_get_contents($settingsSamplePath));
 
+        $itemList = $this->mapListFromRaw($list);
+
         $this->settingsGateway
             ->shouldReceive('all')
-            ->andReturn($list);
+            ->andReturn($itemList);
 
         $this->keyGateway
             ->shouldReceive('getContents')
@@ -80,21 +81,21 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
     public function testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue()
     {
         $name = 'public-key';
-        $description = 'RSA256 public key.';
         $value = '--public-key-contents--';
 
         $this->factory
             ->shouldReceive('buildSettingsItem')
             ->once()
-            ->with($name, $description, $value)
             ->passthru();
 
         $settingsSamplePath = RES_PATH . 'persistence/settings-sample.json';
         $list = json_decode(file_get_contents($settingsSamplePath));
 
+        $itemList = $this->mapListFromRaw($list);
+
         $this->settingsGateway
             ->shouldReceive('all')
-            ->andReturn($list);
+            ->andReturn($itemList);
 
         $this->keyGateway
             ->shouldReceive('getContents')
@@ -120,15 +121,7 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
             ->shouldReceive('buildSettingsItem')
             ->never();
 
-        $otherEntry = (object) [
-            'name' => 'some name',
-            'description' => 'some description',
-            'value' => 'some value',
-        ];
-
-        $list = [
-            $otherEntry,
-        ];
+        $list = [];
 
         $this->settingsGateway
             ->shouldReceive('all')
@@ -136,5 +129,28 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
 
         $response = $this->repository->findByName($name);
         static::assertNull($response);
+    }
+
+    /**
+     * @param $list
+     * @return mixed
+     */
+    protected function mapListFromRaw($list)
+    {
+        $factory = new PersistenceFactory();
+
+        $itemList = array_map(function ($entry) use ($factory) {
+            return $factory->buildItem(
+                $entry->name,
+                $entry->description,
+                $entry->value,
+                $entry->type,
+                $entry->public,
+                $entry->admin,
+                $entry->writable
+            );
+        }, $list);
+
+        return $itemList;
     }
 }
