@@ -12,6 +12,12 @@
         <const name="ACTUAL_API_URL" value="http://localhost:20000/api"/>
     </php>
 
+    <logging>
+        <log type="coverage-clover" target="res/coverage/coverage.xml"/>
+        <log type="coverage-php" target="res/coverage/coverage.serialized"/>
+        <log type="coverage-text" target="res/coverage/coverage.txt" showUncoveredFiles="false"/>
+    </logging>
+
     <testsuites>
         <testsuite name="system">
             <directory>./tests/system</directory>
