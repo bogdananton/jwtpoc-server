@@ -5,7 +5,7 @@ use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use JWTPOC\Infrastructure\Services\Settings;
+use JWTPOC\Resources\Settings\Domain\Service as SettingsService;
 use MultiRouting\Router;
 use MultiRouting\Adapters\Main\Adapter as MainAdapter;
 use Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException;
@@ -18,10 +18,10 @@ class Kernel extends Container
      */
     protected $router;
 
-    /** @var  Settings */
+    /** @var  SettingsService */
     protected $settings;
 
-    public function __construct(Settings $settings)
+    public function __construct(SettingsService $settings)
     {
         $this->settings = $settings;
 
@@ -80,12 +80,17 @@ class Kernel extends Container
 
     protected function prepareEnvironment()
     {
-        $baseUrlSetting = $this->settings->findByName('base-url');
+        $url = '';
 
-        if ($baseUrlSetting) {
-            // @todo use mappers
-//            define('ACTUAL_API_URL', $baseUrlSetting->getValue() . '/api');
-            define('ACTUAL_API_URL', $baseUrlSetting->value . '/api');
+        try {
+            $baseUrlSetting = $this->settings->findByName('base-url');
+            $url = $baseUrlSetting->getValue() . '/api';
+
+        } catch (\Exception $e) {
+            // @todo log this
         }
+
+        // @todo improve this
+        define('ACTUAL_API_URL', $url);
     }
 }

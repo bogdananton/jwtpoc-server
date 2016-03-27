@@ -1,5 +1,5 @@
 <?php
-namespace tests\system\Http\Kernel;
+namespace JWTPOCSystemTests\Application\Http\Kernel;
 
 use GuzzleHttp\Client;
 

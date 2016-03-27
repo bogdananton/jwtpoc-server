@@ -2,15 +2,12 @@
 
 $container = new \Illuminate\Container\Container();
 
-$container->singleton(\JWTPOC\Infrastructure\Services\Settings::class, function () {
-    // @todo refactor to use a storage engine (file storage with path / database storage with credentials)
-    $settingsPath = __DIR__ . '/../storage/persistence/settings.json';
-    $fs = new Symfony\Component\Filesystem\Filesystem();
-    $settings = new \JWTPOC\Infrastructure\Services\Settings($fs, $settingsPath);
-
-    return $settings;
-});
-
-//$container->when(\JWTPOC\Application\Http\Kernel::class)
-//    ->needs(\JWTPOC\Infrastructure\Services\Settings::class)
-//    ->give(\JWTPOC\Infrastructure\Services\Settings::class);
+$container
+    ->when(\JWTPOC\Resources\Settings\Persistence\Repository::class)
+    ->needs(\JWTPOC\Resources\Settings\Persistence\GatewayInterface::class)
+    ->give(function () {
+        $settingsPath = __DIR__ . '/../storage/persistence/settings.json';
+        $fs = new Symfony\Component\Filesystem\Filesystem();
+        $gateway = new \JWTPOC\Resources\Settings\Persistence\Gateways\JSONFile($fs, $settingsPath);
+        return $gateway;
+    });

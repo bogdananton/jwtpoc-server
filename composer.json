@@ -11,11 +11,18 @@
     "illuminate/database": "5.*"
   },
   "require-dev": {
-    "guzzlehttp/guzzle": "6.*"
+    "guzzlehttp/guzzle": "6.*",
+    "mockery/mockery": "*"
   },
   "autoload": {
     "psr-4": {
       "JWTPOC\\": "app/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JWTPOCSystemTests\\": "tests/system/",
+      "JWTPOCUnitTests\\": "tests/unit/"
     }
   }
 }

@@ -1,6 +1,201 @@
 <?php
 $coverage = new PHP_CodeCoverage;
 $coverage->setData(array (
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/GatewayInterface.php' => 
+  array (
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Service.php' => 
+  array (
+    15 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
+      1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
+    ),
+    16 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
+      1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
+    ),
+    37 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
+      1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
+    ),
+    39 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
+      1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
+    ),
+    40 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
+    ),
+    41 => NULL,
+    43 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
+    ),
+    44 => NULL,
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Repository.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    24 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    25 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    33 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    35 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    36 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    37 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    38 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    39 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    40 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    41 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    42 => NULL,
+    43 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+    44 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull',
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Factory.php' => 
+  array (
+    17 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    19 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    20 => NULL,
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Models/Item.php' => 
+  array (
+    12 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    13 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    14 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    15 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    19 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    20 => NULL,
+    24 => 
+    array (
+    ),
+    25 => NULL,
+    29 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem',
+    ),
+    30 => NULL,
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Gateways/JSONFile.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    24 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    25 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    29 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    30 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    32 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    33 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    34 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    39 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    43 => 
+    array (
+      0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
+      1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
+    ),
+    44 => NULL,
+  ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/dependencies.php' => 
   array (
   ),
@@ -255,55 +450,16 @@ $coverage->setData(array (
     87 => 
     array (
     ),
-    88 => 
+    89 => 
     array (
     ),
-  ),
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Infrastructure/Services/Settings.php' => 
-  array (
-    19 => 
+    91 => 
     array (
     ),
-    20 => 
+    94 => 
     array (
     ),
-    21 => 
-    array (
-    ),
-    22 => 
-    array (
-    ),
-    25 => 
-    array (
-    ),
-    26 => 
-    array (
-    ),
-    28 => 
-    array (
-    ),
-    29 => 
-    array (
-    ),
-    30 => 
-    array (
-    ),
-    31 => 
-    array (
-    ),
-    32 => 
-    array (
-    ),
-    33 => 
-    array (
-    ),
-    34 => 
-    array (
-    ),
-    35 => 
-    array (
-    ),
-    36 => 
+    95 => 
     array (
     ),
   ),
@@ -312,13 +468,19 @@ $coverage->setData(array (
     3 => 
     array (
     ),
+    5 => 
+    array (
+    ),
+    6 => 
+    array (
+    ),
     7 => 
     array (
     ),
-    8 => 
+    9 => 
     array (
     ),
-    9 => 
+    10 => 
     array (
     ),
     11 => 
@@ -327,9 +489,42 @@ $coverage->setData(array (
     12 => 
     array (
     ),
+    13 => 
+    array (
+    ),
   ),
 ));
 $coverage->setTests(array (
+  'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenEntryIsFoundThenReturnItem' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'JWTPOCUnitTests\\Resources\\Persistence\\Repository\\FindByNameTest::testWhenNotFoundThenReturnNull' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
   'UNCOVERED_FILES_FROM_WHITELIST' => 
   array (
     'size' => 'unknown',
@@ -346,7 +541,12 @@ $filter->setWhitelistedFiles(array (
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/KeysController.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Kernel.php' => true,
-  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Infrastructure/Services/Settings.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Factory.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Models/Item.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Service.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/GatewayInterface.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Gateways/JSONFile.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Repository.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => true,
 ));
 

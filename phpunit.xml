@@ -22,6 +22,9 @@
         <testsuite name="system">
             <directory>./tests/system</directory>
         </testsuite>
+        <testsuite name="unit">
+            <directory>./tests/unit</directory>
+        </testsuite>
     </testsuites>
 
     <filter>

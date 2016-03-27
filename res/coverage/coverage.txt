@@ -1,10 +1,20 @@
 
 
-Code Coverage Report:    
-  2016-03-27 16:54:59    
-                         
- Summary:                
-  Classes: 16.67% (1/6)  
-  Methods:  0.00% (0/12) 
-  Lines:    0.00% (0/100)
+Code Coverage Report:     
+  2016-03-27 19:23:42     
+                          
+ Summary:                 
+  Classes: 50.00% (5/10)  
+  Methods: 47.62% (10/21) 
+  Lines:   28.68% (37/129)
 
+\JWTPOC\Resources\Settings\Domain::Factory
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  2/  2)
+\JWTPOC\Resources\Settings\Domain::Service
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  6/  6)
+\JWTPOC\Resources\Settings\Domain\Models::Item
+  Methods:  75.00% ( 3/ 4)   Lines:  85.71% (  6/  7)
+\JWTPOC\Resources\Settings\Persistence::Repository
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 13/ 13)
+\JWTPOC\Resources\Settings\Persistence\Gateways::JSONFile
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% ( 10/ 10)
