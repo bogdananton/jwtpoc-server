@@ -13,6 +13,7 @@ function file_get_contents($file)
 
 namespace JWTPOCUnitTests\Resources\Persistence\Gateways\JSONFile;
 
+use JWTPOC\Resources\Settings\Persistence\Factory;
 use JWTPOC\Resources\Settings\Persistence\Gateways\JSONFile;
 use Symfony\Component\Filesystem\Filesystem;
 
@@ -24,6 +25,9 @@ class AllTest extends \PHPUnit_Framework_TestCase
     /** @var  JSONFile|\Mockery\MockInterface */
     protected $gateway;
 
+    /** @var  Factory|\Mockery\MockInterface */
+    protected $factory;
+
     /** @var  string */
     protected $path;
 
@@ -33,10 +37,12 @@ class AllTest extends \PHPUnit_Framework_TestCase
     {
         $this->path = '/path/to/persistence/settings.json';
         $this->filesystem = \Mockery::mock(Filesystem::class);
+        $this->factory = \Mockery::mock(Factory::class)->makePartial();
 
         $args = [
             $this->filesystem,
             $this->path,
+            $this->factory,
         ];
 
         $this->gateway = \Mockery::mock(JSONFile::class, $args)->makePartial();

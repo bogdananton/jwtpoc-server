@@ -1,10 +1,11 @@
 <?php
 namespace JWTPOC\Resources\Settings\Persistence\Gateways;
 
-use JWTPOC\Resources\Settings\Persistence\GatewayInterface;
+use JWTPOC\Contracts\Settings\Gateway;
+use JWTPOC\Resources\Settings\Persistence\Factory;
 use Symfony\Component\Filesystem\Filesystem;
 
-class JSONFile implements GatewayInterface
+class JSONFile implements Gateway
 {
     /** @var Filesystem  */
     protected $fs;
@@ -12,16 +13,21 @@ class JSONFile implements GatewayInterface
     /** @var string  */
     protected $path;
 
+    /** @var Factory  */
+    protected $factory;
+
     /**
      * Use the filesystem to load settings.
      *
-     * @param string $path
      * @param Filesystem $filesystem
+     * @param string $path  JSON file path.
+     * @param Factory $factory
      */
-    public function __construct(Filesystem $filesystem, $path)
+    public function __construct(Filesystem $filesystem, $path, Factory $factory)
     {
         $this->fs = $filesystem;
         $this->path = $path;
+        $this->factory = $factory;
     }
 
     public function all()

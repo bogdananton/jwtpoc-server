@@ -3,7 +3,8 @@ namespace JWTPOCUnitTests\Resources\Persistence\Repository;
 
 use JWTPOC\Resources\Settings\Domain\Factory;
 use JWTPOC\Resources\Settings\Domain\Models\Item;
-use JWTPOC\Resources\Settings\Persistence\GatewayInterface;
+use JWTPOC\Contracts\Settings\Gateway as SettingsGateway;
+use JWTPOC\Contracts\Keys\Gateway as KeysGateway;
 use JWTPOC\Resources\Settings\Persistence\Repository;
 
 class FindByNameTest extends \PHPUnit_Framework_TestCase
@@ -11,19 +12,24 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
     /** @var  Repository|\Mockery\MockInterface */
     protected $repository;
 
-    /** @var  GatewayInterface|\Mockery\MockInterface */
-    protected $gateway;
+    /** @var  SettingsGateway|\Mockery\MockInterface */
+    protected $settingsGateway;
+
+    /** @var  KeysGateway|\Mockery\MockInterface */
+    protected $keyGateway;
 
     /** @var  Factory|\Mockery\MockInterface */
     protected $factory;
 
     public function setUp()
     {
+        $this->settingsGateway = \Mockery::mock(SettingsGateway::class)->makePartial();
+        $this->keyGateway = \Mockery::mock(KeysGateway::class)->makePartial();
         $this->factory = \Mockery::mock(Factory::class)->makePartial();
-        $this->gateway = \Mockery::mock(GatewayInterface::class)->makePartial();
 
         $args = [
-            $this->gateway,
+            $this->settingsGateway,
+            $this->keyGateway,
             $this->factory,
         ];
 
@@ -36,13 +42,13 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * When entry is found then return item.
+     * When regular (string) entry is found then return item.
      */
-    public function testWhenEntryIsFoundThenReturnItem()
+    public function testWhenRegularStringEntryIsFoundThenReturnItem()
     {
-        $name = 'item-name';
-        $description = 'item-description';
-        $value = 'item-value';
+        $name = 'base-url';
+        $description = 'The base URL for self. Will be used as the issuer identity.';
+        $value = 'http://localhost:20000';
 
         $this->factory
             ->shouldReceive('buildSettingsItem')
@@ -50,26 +56,51 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
             ->with($name, $description, $value)
             ->passthru();
 
-        $foundEntry = (object) [
-            'name' => 'item-name',
-            'description' => 'item-description',
-            'value' => 'item-value',
-        ];
+        $settingsSamplePath = RES_PATH . 'persistence/settings-sample.json';
+        $list = json_decode(file_get_contents($settingsSamplePath));
 
-        $otherEntry = (object) [
-            'name' => 'some name',
-            'description' => 'some description',
-            'value' => 'some value',
-        ];
-
-        $list = [
-            $otherEntry,
-            $foundEntry,
-        ];
-
-        $this->gateway
+        $this->settingsGateway
             ->shouldReceive('all')
             ->andReturn($list);
+
+        $this->keyGateway
+            ->shouldReceive('getContents')
+            ->never();
+
+        $response = $this->repository->findByName($name);
+        static::assertInstanceOf(Item::class, $response);
+
+        static::assertEquals($name, $response->getName());
+        static::assertEquals($value, $response->getValue());
+    }
+
+    /**
+     * When public key item is found then return item with key contents as value.
+     */
+    public function testWhenPublicKeyItemIsFoundThenReturnItemWithKeyContentsAsValue()
+    {
+        $name = 'public-key';
+        $description = 'RSA256 public key.';
+        $value = '--public-key-contents--';
+
+        $this->factory
+            ->shouldReceive('buildSettingsItem')
+            ->once()
+            ->with($name, $description, $value)
+            ->passthru();
+
+        $settingsSamplePath = RES_PATH . 'persistence/settings-sample.json';
+        $list = json_decode(file_get_contents($settingsSamplePath));
+
+        $this->settingsGateway
+            ->shouldReceive('all')
+            ->andReturn($list);
+
+        $this->keyGateway
+            ->shouldReceive('getContents')
+            ->once()
+            ->with('mine/default.pub')
+            ->andReturn($value);
 
         $response = $this->repository->findByName($name);
         static::assertInstanceOf(Item::class, $response);
@@ -99,7 +130,7 @@ class FindByNameTest extends \PHPUnit_Framework_TestCase
             $otherEntry,
         ];
 
-        $this->gateway
+        $this->settingsGateway
             ->shouldReceive('all')
             ->andReturn($list);
 
