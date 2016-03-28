@@ -12,7 +12,7 @@ class Factory
      * @param bool $isPublic
      * @return Item
      */
-    public function buildSettingsItem($name, $description, $value, $isPublic)
+    public function buildItem($name, $description, $value, $isPublic)
     {
         // @todo convert input to attributes before building
         $item = new Item($name, $description, $value, $isPublic);

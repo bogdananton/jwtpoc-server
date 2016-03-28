@@ -5,25 +5,8 @@ use JWTPOC\Resources\Settings\Domain\Service;
 use JWTPOC\Resources\Settings\Domain\Models\Item;
 use JWTPOC\Resources\Settings\Persistence\Repository;
 
-class FindByNameTest extends \PHPUnit_Framework_TestCase
+class FindByNameTest extends ServiceTestCase
 {
-    /** @var  Repository|\Mockery\MockInterface */
-    protected $repository;
-
-    /** @var  Service|\Mockery\MockInterface */
-    protected $service;
-
-    public function setUp()
-    {
-        $this->repository = \Mockery::mock(Repository::class)->makePartial();
-        $this->service = \Mockery::mock(Service::class, [$this->repository])->makePartial();
-    }
-
-    public function tearDown()
-    {
-        \Mockery::close();
-    }
-    
     /**
      * When no entry is found then throw exception.
      * @expectedException \Symfony\Component\Translation\Exception\NotFoundResourceException

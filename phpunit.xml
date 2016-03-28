@@ -32,7 +32,8 @@
         <whitelist>
             <directory>./app</directory>
             <exclude>
-                <directory>./bin</directory>
+                <directory>./app/Application</directory>
+                <file>./app/dependencies.php</file>
             </exclude>
         </whitelist>
     </filter>

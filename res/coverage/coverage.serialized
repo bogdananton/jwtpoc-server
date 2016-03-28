@@ -19,30 +19,30 @@ $coverage->setData(array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
       1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
     ),
-    37 => 
+    27 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
       1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
     ),
-    39 => 
+    29 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
       1 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
     ),
-    40 => 
+    30 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenAnEntryIsFoundThenReturnItAsASettingDomainItemWithTheGivenName',
     ),
-    41 => NULL,
-    43 => 
+    31 => NULL,
+    33 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Settings\\Domain\\Service\\FindByNameTest::testWhenNoEntryIsFoundThenThrowException',
     ),
-    44 => NULL,
-    51 => 
+    34 => NULL,
+    41 => 
     array (
     ),
-    52 => NULL,
+    42 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Repository.php' => 
   array (
@@ -350,16 +350,16 @@ $coverage->setData(array (
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    63 => 
+    60 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    67 => 
+    64 => 
     array (
       0 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenThenFileIsNotFoundThenReturnEmptyArray',
       1 => 'JWTPOCUnitTests\\Resources\\Persistence\\Gateways\\JSONFile\\AllTest::testWhenTheFileIsFoundThenReturnTheJsonDecodedContents',
     ),
-    68 => NULL,
+    65 => NULL,
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Persistence/Factory.php' => 
   array (
@@ -565,6 +565,60 @@ $coverage->setData(array (
     31 => 
     array (
     ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Config/routes.php' => 
   array (
@@ -607,16 +661,70 @@ $coverage->setData(array (
     23 => 
     array (
     ),
+    24 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/ClientsController.php' => 
   array (
-    9 => 
+    18 => 
     array (
     ),
-    10 => 
+    19 => 
     array (
     ),
-    11 => 
+    20 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
     array (
     ),
   ),
@@ -676,52 +784,76 @@ $coverage->setData(array (
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => 
   array (
-    19 => 
-    array (
-    ),
     20 => 
     array (
     ),
     21 => 
     array (
     ),
-    24 => 
+    22 => 
     array (
     ),
-    25 => 
+    23 => 
     array (
     ),
     26 => 
     array (
     ),
-    29 => 
+    27 => 
     array (
     ),
-    30 => 
+    28 => 
     array (
     ),
     31 => 
     array (
     ),
-    33 => 
+    32 => 
     array (
     ),
-    34 => 
+    33 => 
     array (
     ),
     35 => 
     array (
     ),
-    37 => 
+    36 => 
     array (
     ),
-    38 => 
+    37 => 
     array (
     ),
     39 => 
     array (
     ),
     40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    54 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
     array (
     ),
   ),
@@ -863,8 +995,470 @@ $coverage->setData(array (
     array (
     ),
   ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Contracts/Clients/Gateway.php' => 
+  array (
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Application/Http/Controller.php' => 
+  array (
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Infrastructure/Repository.php' => 
+  array (
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+    62 => 
+    array (
+    ),
+    63 => 
+    array (
+    ),
+    64 => 
+    array (
+    ),
+    66 => 
+    array (
+    ),
+    67 => 
+    array (
+    ),
+    75 => 
+    array (
+    ),
+    76 => 
+    array (
+    ),
+    79 => 
+    array (
+    ),
+    80 => 
+    array (
+    ),
+    81 => 
+    array (
+    ),
+    82 => 
+    array (
+    ),
+    83 => 
+    array (
+    ),
+    84 => 
+    array (
+    ),
+    85 => 
+    array (
+    ),
+    86 => 
+    array (
+    ),
+    87 => 
+    array (
+    ),
+    89 => 
+    array (
+    ),
+    90 => 
+    array (
+    ),
+    91 => 
+    array (
+    ),
+    92 => 
+    array (
+    ),
+    93 => 
+    array (
+    ),
+    94 => 
+    array (
+    ),
+    95 => 
+    array (
+    ),
+    96 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Infrastructure/Service.php' => 
+  array (
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Factory.php' => 
+  array (
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Gateways/JSONFile.php' => 
+  array (
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    48 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Models/Collection.php' => 
+  array (
+    8 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Models/Item.php' => 
+  array (
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    28 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+  ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Factory.php' => 
   array (
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Gateway.php' => 
   array (
@@ -886,10 +1480,88 @@ $coverage->setData(array (
     31 => 
     array (
     ),
-    32 => 
+    34 => 
     array (
     ),
-    33 => 
+    35 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    39 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Models/Item.php' => 
+  array (
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
     array (
     ),
     35 => 
@@ -901,10 +1573,217 @@ $coverage->setData(array (
     37 => 
     array (
     ),
-    39 => 
+    40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Factory.php' => 
+  array (
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+    13 => 
+    array (
+    ),
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Models/Collection.php' => 
+  array (
+    8 => 
+    array (
+    ),
+    10 => 
+    array (
+    ),
+    11 => 
+    array (
+    ),
+    12 => 
+    array (
+    ),
+  ),
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Models/Item.php' => 
+  array (
+    14 => 
+    array (
+    ),
+    15 => 
+    array (
+    ),
+    16 => 
+    array (
+    ),
+    17 => 
+    array (
+    ),
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    23 => 
+    array (
+    ),
+    24 => 
+    array (
+    ),
+    25 => 
+    array (
+    ),
+    26 => 
+    array (
+    ),
+    27 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    35 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
     array (
     ),
     40 => 
+    array (
+    ),
+    41 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    52 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    57 => 
     array (
     ),
   ),
@@ -1111,25 +1990,28 @@ $coverage->setData(array (
     39 => 
     array (
     ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    44 => 
+    array (
+    ),
   ),
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/dependencies.php' => 
   array (
     2 => 
     array (
     ),
-    4 => 
-    array (
-    ),
-    5 => 
-    array (
-    ),
-    6 => 
+    7 => 
     array (
     ),
     8 => 
     array (
     ),
-    10 => 
+    9 => 
     array (
     ),
     11 => 
@@ -1141,7 +2023,7 @@ $coverage->setData(array (
     14 => 
     array (
     ),
-    15 => 
+    16 => 
     array (
     ),
     17 => 
@@ -1150,13 +2032,13 @@ $coverage->setData(array (
     18 => 
     array (
     ),
-    19 => 
+    20 => 
     array (
     ),
     21 => 
     array (
     ),
-    23 => 
+    22 => 
     array (
     ),
     24 => 
@@ -1168,7 +2050,67 @@ $coverage->setData(array (
     27 => 
     array (
     ),
-    28 => 
+    29 => 
+    array (
+    ),
+    30 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+    37 => 
+    array (
+    ),
+    38 => 
+    array (
+    ),
+    40 => 
+    array (
+    ),
+    42 => 
+    array (
+    ),
+    43 => 
+    array (
+    ),
+    45 => 
+    array (
+    ),
+    46 => 
+    array (
+    ),
+    47 => 
+    array (
+    ),
+    49 => 
+    array (
+    ),
+    50 => 
+    array (
+    ),
+    51 => 
+    array (
+    ),
+    53 => 
+    array (
+    ),
+    55 => 
+    array (
+    ),
+    56 => 
+    array (
+    ),
+    58 => 
+    array (
+    ),
+    59 => 
+    array (
+    ),
+    60 => 
     array (
     ),
   ),
@@ -1225,10 +2167,22 @@ $filter->setWhitelistedFiles(array (
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/KeysController.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Controllers/SettingsController.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Application/Http/Kernel.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Contracts/Clients/Gateway.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Contracts/Keys/Gateway.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Contracts/Settings/Gateway.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Application/Http/Controller.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Infrastructure/Repository.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Infrastructure/Service.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Factory.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Gateways/JSONFile.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Models/Collection.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Clients/Persistence/Models/Item.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Factory.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Gateway.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Persistence/Models/Item.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Factory.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Models/Collection.php' => true,
+  '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Keys/Presentation/Models/Item.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Application/Http/Controller.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Factory.php' => true,
   '/Users/bogdananton/projects/jwtpoc/jwtpoc-server/app/Resources/Settings/Domain/Models/Item.php' => true,

@@ -1,27 +1,20 @@
 <?php
-namespace JWTPOC\Resources\Settings\Domain;
+namespace JWTPOC\Resources\Clients\Infrastructure;
 
 
-use JWTPOC\Resources\Settings\Persistence\Repository as SettingsRepository;
-use JWTPOC\Resources\Settings\Domain\Models\Item;
+use JWTPOC\Resources\Clients\Infrastructure\Repository as ClientsRepository;
 use Symfony\Component\Translation\Exception\NotFoundResourceException;
 
 class Service
 {
+    /** @var ClientsRepository  */
     protected $repository;
 
-    public function __construct(SettingsRepository $repository)
+    public function __construct(ClientsRepository $repository)
     {
         $this->repository = $repository;
     }
 
-    /**
-     * Returns a setting structure for the given identifier.
-     *
-     * @throws NotFoundResourceException when there is no resource with the given name.
-     * @param string $name
-     * @return \JWTPOC\Resources\Settings\Domain\Models\Item
-     */
     public function findByName($name)
     {
         $item = $this->repository->findByName($name);

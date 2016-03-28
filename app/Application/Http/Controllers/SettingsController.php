@@ -43,7 +43,6 @@ class SettingsController extends BaseController
 
     /**
      * @todo improve this. allow wildcards
-     *
      * @param $name
      * @param $attribute
      * @return JsonResponse

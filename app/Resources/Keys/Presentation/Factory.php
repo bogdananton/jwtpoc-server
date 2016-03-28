@@ -1,8 +1,8 @@
 <?php
-namespace JWTPOC\Resources\Keys\Persistence;
+namespace JWTPOC\Resources\Keys\Presentation;
 
-use JWTPOC\Resources\Keys\Persistence\Models\Item;
-use JWTPOC\Resources\Keys\Persistence\Models\Collection;
+use JWTPOC\Resources\Keys\Presentation\Models\Item;
+use JWTPOC\Resources\Keys\Presentation\Models\Collection;
 
 class Factory
 {

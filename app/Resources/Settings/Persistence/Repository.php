@@ -51,7 +51,15 @@ class Repository
         /** @var \JWTPOC\Resources\Settings\Persistence\Models\Item $entry */
         foreach ($entries as $entry) {
             if ($entry->getName() === $name) {
-                $item = $this->buildItem($entry);
+
+                $item = $this->buildItem(
+                    $entry->getName(),
+                    $entry->getDescription(),
+                    $entry->getValue(),
+                    $entry->isPublic(),
+                    $entry->isKey()
+                );
+
                 return $item;
             }
         }
@@ -66,41 +74,44 @@ class Repository
         $entries = $this->settingsGateway->all();
 
         foreach ($entries as $entry) {
-            $response[] = $this->buildItem($entry);
+            $item = $this->buildItem(
+                $entry->getName(),
+                $entry->getDescription(),
+                $entry->getValue(),
+                $entry->isPublic(),
+                $entry->isKey()
+            );
+
+            $response[] = $item;
         }
 
         return $response;
     }
 
     /**
-     * @param \JWTPOC\Resources\Settings\Persistence\Models\Item $entry
-     * @return string
-     */
-    protected function getEntryValueContents($entry)
-    {
-        if ($entry->isKey()) {
-            $value = $this->keysGateway->getContents($entry->getValue());
-
-        } else {
-            $value = $entry->getValue();
-        }
-
-        return $value;
-    }
-
-    /**
-     * @param \JWTPOC\Resources\Settings\Persistence\Models\Item $entry
+     * @param string $name
+     * @param string $description
+     * @param string $value
+     * @param bool $isPublic
+     * @param bool $isKey
      * @return Item
      */
-    protected function buildItem($entry)
-    {
-        $value = $this->getEntryValueContents($entry);
+    protected function buildItem(
+        $name,
+        $description,
+        $value,
+        $isPublic,
+        $isKey
+    ) {
+        $value = $isKey
+            ? $this->keysGateway->getContents($value)
+            : $value;
 
-        $item = $this->factory->buildSettingsItem(
-            $entry->getName(),
-            $entry->getDescription(),
+        $item = $this->factory->buildItem(
+            $name,
+            $description,
             $value,
-            $entry->isPublic()
+            $isPublic
         );
 
         return $item;

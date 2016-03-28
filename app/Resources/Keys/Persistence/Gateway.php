@@ -1,7 +1,7 @@
 <?php
 namespace JWTPOC\Resources\Keys\Persistence;
 
-use JWTPOC\Resources\Keys\Persistence\Factory;
+use JWTPOC\Contracts\Keys\Key;
 use Symfony\Component\Filesystem\Filesystem;
 
 class Gateway implements \JWTPOC\Contracts\Keys\Gateway
@@ -25,6 +25,13 @@ class Gateway implements \JWTPOC\Contracts\Keys\Gateway
         $this->fs = $filesystem;
         $this->path = $path;
         $this->factory = $factory;
+    }
+
+    public function getByOwner($name)
+    {
+        // @todo finish this
+        // store all owners into a different folder
+        return [];
     }
 
     public function getContents($filename)

@@ -15,12 +15,15 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         'uses' => '\JWTPOC\Application\Http\Controllers\IntrospectionController@get',
     ]);
 
-    $router->get('clients', [
-        'uses' => '\JWTPOC\Application\Http\Controllers\ClientsController@getListing',
+    $router->resource('clients', '\JWTPOC\Application\Http\Controllers\ClientsController', [
+        'only' => ['index', 'show']
     ]);
 
-    $router->resource('settings', '\JWTPOC\Application\Http\Controllers\SettingsController');
+    $router->resource('settings', '\JWTPOC\Application\Http\Controllers\SettingsController', [
+        'only' => ['index', 'show']
+    ]);
 
+    // @todo allow wildcards
     $router->get('settings/{name}/{attr}', [
         'uses' => '\JWTPOC\Application\Http\Controllers\SettingsController@getItemAttribute',
     ]);
